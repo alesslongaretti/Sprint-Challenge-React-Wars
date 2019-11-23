@@ -2,6 +2,26 @@ import React from 'react';
 import './App.css';
 
 import StarContainer from "./components/StarContainer";
+import styled from "styled-components";
+
+const Title = styled.h1`
+justify-content: center;
+display: flex;
+color: #ffb158;
+font-size: 60px;
+font-weight: 900;
+border: solid .5px black;
+background-color: #f5f2d0;
+
+`;
+
+const WrapperDiv = styled.div`
+
+display: flex;
+justify-content: center;
+
+
+`;
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -12,10 +32,15 @@ const App = () => {
   // sync up with, if any.
 
   return (
-    <div className="App">
+    <div>
 
-      <h1 className="Header">React Wars</h1>
-      <StarContainer/>
+      <Title >React Wars</Title>
+      <WrapperDiv>
+
+        <StarContainer/>
+      
+      </WrapperDiv>
+      
     
     </div>
   );

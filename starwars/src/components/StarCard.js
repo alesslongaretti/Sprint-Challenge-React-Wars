@@ -1,11 +1,23 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const Wrapper = styled.div`
+padding: 35px;
+text-align: center;
+
+
+`;
 
 const StarCard = props => {
     return (
-        <div className="star-card">
-            <h1>{props.name}</h1>
+        <Wrapper>
+        <h1>{props.names}</h1>
+        <p> Height: {props.height}</p>
+        <p>Gender: {props.genders}</p>
+        <p>Birth Year: {props.birthYear}</p>
 
-        </div>
+
+        </Wrapper>
     )
 }
 
