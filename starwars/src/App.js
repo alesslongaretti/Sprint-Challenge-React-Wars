@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 
 import StarContainer from "./components/StarContainer";
+import Footer from "./components/Footer";
 import styled from "styled-components";
 
 const Title = styled.h1`
@@ -17,7 +18,7 @@ background-color: #f5f2d0;
 
 const WrapperDiv = styled.div`
 
-display: flex;
+
 justify-content: center;
 
 
@@ -38,6 +39,7 @@ const App = () => {
       <WrapperDiv>
 
         <StarContainer/>
+        <Footer/>
       
       </WrapperDiv>
       
